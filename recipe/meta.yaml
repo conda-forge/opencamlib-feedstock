@@ -9,6 +9,8 @@ package:
 source:
     url: https://github.com/aewallin/{{ name }}/archive/{{ version }}.tar.gz
     sha256: {{ sha256 }}
+    patches:
+        - cmake.patch
 
 build:
     number: 3
