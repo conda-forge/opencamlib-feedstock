@@ -5,9 +5,13 @@ Home: http://www.anderswallin.net/CAM/
 
 Package license: LGPL-2.1
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opencamlib-feedstock/blob/master/LICENSE.txt)
 
 Summary: OpenCAMLib (ocl)
+
+Development: https://github.com/aewallin/opencamlib
+
+Documentation: http://www.anderswallin.net/CAM/
 
 OpenCAMLib (ocl) is a c++ library for creating toolpaths for cnc-machines such as mills and lathes.
 
@@ -29,129 +33,129 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_boost1.72.0python3.6.____cpythontarget_platformlinux-64</td>
+              <td>linux_64_boost1.72.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.72.0python3.6.____cpythontarget_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.72.0python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost1.72.0python3.7.____cpythontarget_platformlinux-64</td>
+              <td>linux_64_boost1.72.0python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.72.0python3.7.____cpythontarget_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.72.0python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost1.72.0python3.8.____cpythontarget_platformlinux-64</td>
+              <td>linux_64_boost1.72.0python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.72.0python3.8.____cpythontarget_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.72.0python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost1.74.0python3.6.____cpythontarget_platformlinux-64</td>
+              <td>linux_64_boost1.74.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.6.____cpythontarget_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost1.74.0python3.7.____cpythontarget_platformlinux-64</td>
+              <td>linux_64_boost1.74.0python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.7.____cpythontarget_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost1.74.0python3.8.____cpythontarget_platformlinux-64</td>
+              <td>linux_64_boost1.74.0python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.8.____cpythontarget_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost1.74.0python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_boost1.72.0python3.6.____cpythontarget_platformosx-64</td>
+              <td>osx_64_boost1.72.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.72.0python3.6.____cpythontarget_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.72.0python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_boost1.72.0python3.7.____cpythontarget_platformosx-64</td>
+              <td>osx_64_boost1.72.0python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.72.0python3.7.____cpythontarget_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.72.0python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_boost1.72.0python3.8.____cpythontarget_platformosx-64</td>
+              <td>osx_64_boost1.72.0python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.72.0python3.8.____cpythontarget_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.72.0python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_boost1.74.0python3.6.____cpythontarget_platformosx-64</td>
+              <td>osx_64_boost1.74.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.6.____cpythontarget_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_boost1.74.0python3.7.____cpythontarget_platformosx-64</td>
+              <td>osx_64_boost1.74.0python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.7.____cpythontarget_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_boost1.74.0python3.8.____cpythontarget_platformosx-64</td>
+              <td>osx_64_boost1.74.0python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.8.____cpythontarget_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=osx&configuration=osx_64_boost1.74.0python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.72.0python3.6.____cpythontarget_platformwin-64</td>
+              <td>win_64_boost1.72.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.6.____cpythontarget_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.72.0python3.7.____cpythontarget_platformwin-64</td>
+              <td>win_64_boost1.72.0python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.7.____cpythontarget_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.72.0python3.8.____cpythontarget_platformwin-64</td>
+              <td>win_64_boost1.72.0python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.8.____cpythontarget_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.74.0python3.6.____cpythontarget_platformwin-64</td>
+              <td>win_64_boost1.74.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.6.____cpythontarget_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.74.0python3.7.____cpythontarget_platformwin-64</td>
+              <td>win_64_boost1.74.0python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.7.____cpythontarget_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.74.0python3.8.____cpythontarget_platformwin-64</td>
+              <td>win_64_boost1.74.0python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7385&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.8.____cpythontarget_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opencamlib-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
