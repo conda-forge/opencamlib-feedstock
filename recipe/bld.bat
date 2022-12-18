@@ -10,7 +10,7 @@ cmake -G "Ninja" ^
       -D USE_PY_3:BOOL=ON ^
       -D Boost_NO_BOOST_CMAKE:BOOL=ON ^
       -D VERSION_STRING:STRING="%PKG_VERSION%" ^
-      -D Python3_FIND_STRATEGY=LOCATION ^
+      -D Python_FIND_STRATEGY=LOCATION ^
       -D BUILD_DOC=OFF ^
       ../src
 
