@@ -30,7 +30,7 @@ requirements:
 
 test:
   imports:
-    - ocl
+    - opencamlib
 
 about:
     home: http://www.anderswallin.net/CAM/
