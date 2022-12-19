@@ -18,6 +18,6 @@ cmake -G "Ninja" \
       -D Boost_NO_BOOST_CMAKE:BOOL=ON \
       -D VERSION_STRING:STRING="${PKG_VERSION}" \
       -D BUILD_DOC=OFF \
-      ../src
+      ..
 
 ninja install
