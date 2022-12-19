@@ -11,7 +11,7 @@ source:
     sha256: {{ sha256 }}
 
 build:
-    number: 7
+    number: 8
     skip: true  # [py<36]
 
 requirements:
@@ -21,6 +21,8 @@ requirements:
         - cmake
         - python                                 # [build_platform != target_platform]
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+        - llvm-openmp  # [osx]
+        - libgomp      # [linux]
     host:
         - python
         - boost
@@ -31,7 +33,9 @@ requirements:
 test:
   imports:
     - opencamlib
-
+  source_files:
+    - examples/python/test.py
+    - stl/**
 about:
     home: http://www.anderswallin.net/CAM/
     license: LGPL-2.1
@@ -46,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - looooo
+    - vespakoen

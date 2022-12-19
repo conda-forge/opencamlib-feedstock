@@ -13,6 +13,7 @@ cmake -G "Ninja" \
       -D CMAKE_INSTALL_PREFIX:FILEPATH=${SP_DIR} \
       -D Python_ROOT_DIR:FILEPATH=${PREFIX} \
       -D Python_FIND_STRATEGY=LOCATION \
+      -D Python_EXECUTABLE=${PYTHON} \
       -D BUILD_PY_LIB:BOOL=ON \
       -D Boost_NO_BOOST_CMAKE:BOOL=ON \
       -D VERSION_STRING:STRING="${PKG_VERSION}" \
