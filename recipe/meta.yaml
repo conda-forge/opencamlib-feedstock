@@ -19,16 +19,16 @@ requirements:
         - {{ compiler("cxx") }}
         - ninja
         - cmake
-        - python                                # [build_platform == target_platform]
+        - python >=3.6                           # [build_platform != target_platform]
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
     host:
-        - python
+        - python >=3.6
         - boost
     run:
         - boost
-        - python
+        - python >=3.6
 
 test:
   imports:
