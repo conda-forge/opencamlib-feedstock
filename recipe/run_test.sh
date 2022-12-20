@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd examples/python
-python test.py
+${PYTHON} test.py

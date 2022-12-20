@@ -13,7 +13,6 @@ source:
 build:
     number: 0
     skip: true  # [py<36]
-    script: "{{ PYTHON }} -m pip install . -vv --config-settings='cmake.args=-D BUILD_DOC:BOOL=OFF -DVERSION_STRING={{ PKG_VERSION }}'"
 
 requirements:
     build:
