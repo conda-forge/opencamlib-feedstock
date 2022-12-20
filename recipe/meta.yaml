@@ -19,16 +19,16 @@ requirements:
         - {{ compiler("cxx") }}
         - ninja
         - cmake
-        - python >=3.6                           # [build_platform != target_platform]
+        - python                                 # [build_platform != target_platform]
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
     host:
-        - python >=3.6
+        - python
         - boost
     run:
         - boost
-        - python >=3.6
+        - python
 
 test:
   imports:
@@ -38,7 +38,7 @@ test:
     - stl/**
 about:
     home: http://www.anderswallin.net/CAM/
-    license: LGPL-2.1
+    license: LGPL-2.1-or-later
     license_family: LGPL
     license_file: COPYING
     summary: OpenCAMLib (ocl)
