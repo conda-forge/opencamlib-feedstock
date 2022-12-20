@@ -19,6 +19,7 @@ cmake -G "Ninja" \
       -D Python_EXECUTABLE="${PYTHON}" \
       -D Python_ROOT_DIR:FILEPATH="${BUILD_PREFIX}" \
       -D Python_FIND_STRATEGY="LOCATION" \
+      -D Python_FIND_UNVERSIONED_NAMES="FIRST" \
       -D BUILD_PY_LIB:BOOL="ON" \
       -D Boost_NO_BOOST_CMAKE:BOOL="ON" \
       -D VERSION_STRING:STRING="${PKG_VERSION}" \
