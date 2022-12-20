@@ -1,5 +1,12 @@
 mkdir build -p
-cd build 
+cd build
+
+echo "find PREFIX"
+find "$PREFIX"
+
+echo "find BUILD_PREFIX"
+find "$BUILD_PREFIX"
+
 
 if [[ ${target_platform} =~ linux* ]]; then
 	# https://github.com/conda-forge/boost-feedstock/issues/72
@@ -8,16 +15,15 @@ fi
 
 cmake -G "Ninja" \
       ${CMAKE_ARGS} \
-      -D CMAKE_BUILD_TYPE:STRING=Release \
-      -D CMAKE_PREFIX_PATH:FILEPATH=${PREFIX} \
-      -D CMAKE_INSTALL_PREFIX:FILEPATH=${SP_DIR} \
-      -D Python_ROOT_DIR:FILEPATH=${PREFIX} \
-      -D Python_FIND_STRATEGY=LOCATION \
-      -D Python_EXECUTABLE=${PYTHON} \
-      -D BUILD_PY_LIB:BOOL=ON \
-      -D Boost_NO_BOOST_CMAKE:BOOL=ON \
+      -D CMAKE_BUILD_TYPE:STRING="Release" \
+      -D CMAKE_PREFIX_PATH:FILEPATH="${PREFIX}" \
+      -D CMAKE_INSTALL_PREFIX:FILEPATH="${SP_DIR}" \
+      -D Python_ROOT_DIR:FILEPATH="${BUILD_PREFIX}" \
+      -D Python_FIND_STRATEGY="LOCATION" \
+      -D BUILD_PY_LIB:BOOL="ON" \
+      -D Boost_NO_BOOST_CMAKE:BOOL="ON" \
       -D VERSION_STRING:STRING="${PKG_VERSION}" \
-      -D BUILD_DOC=OFF \
+      -D BUILD_DOC="OFF" \
       ..
 
 ninja install

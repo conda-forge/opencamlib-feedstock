@@ -19,7 +19,7 @@ requirements:
         - {{ compiler("cxx") }}
         - ninja
         - cmake
-        - python                                 # [build_platform != target_platform]
+        - python                                # [build_platform == target_platform]
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
