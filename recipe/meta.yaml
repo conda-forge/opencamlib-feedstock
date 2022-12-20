@@ -27,6 +27,7 @@ requirements:
     host:
         - python
         - pip
+        - scikit-build-core
         - boost
     run:
         - boost
