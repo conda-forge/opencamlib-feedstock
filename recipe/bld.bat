@@ -6,6 +6,7 @@ cmake -G "Ninja" ^
       -D CMAKE_BUILD_TYPE:STRING="Release" ^
       -D CMAKE_PREFIX_PATH:FILEPATH="%PREFIX%" ^
       -D CMAKE_INSTALL_PREFIX:FILEPATH="%SP_DIR%" ^
+      -D Python_EXECUTABLE:FILEPATH="%PYTHON%" ^
       -D Python_FIND_STRATEGY="LOCATION" ^
       -D Python_ROOT_DIR:FILEPATH="%PREFIX%" ^
       -D BUILD_PY_LIB:BOOL="ON" ^
