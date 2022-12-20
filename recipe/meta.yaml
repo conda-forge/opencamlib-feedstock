@@ -1,6 +1,6 @@
 {% set name = "opencamlib" %}
 {% set version = "2022.12.20" %}
-{% set sha256 = "b598454c4aa8b20f2af19bdcac4b7e8bd245ab83ad31576e16c86edee255b482" %}
+{% set sha256 = "137c9a965d2112bd679e486df26c3b3ebee6d959449c0235d1d94f4b4d33fb7d" %}
 
 package:
     name: {{ name }}
