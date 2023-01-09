@@ -7,8 +7,10 @@ package:
     version: {{ version }}
 
 source:
-    url: https://github.com/aewallin/{{ name }}/archive/{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+    # url: https://github.com/aewallin/{{ name }}/archive/{{ version }}.tar.gz
+    # sha256: {{ sha256 }}
+    url: https://github.com/vespakoen/opencamlib/archive/refs/tags/2023.01.09.tar.gz
+    sha256: 25222a83f17d8c0e2745a3e3d83866cc504119e2338e8d16b5a742e4dd1cc0cd
 
 build:
     number: 0
