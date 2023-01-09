@@ -9,8 +9,8 @@ package:
 source:
     # url: https://github.com/aewallin/{{ name }}/archive/{{ version }}.tar.gz
     # sha256: {{ sha256 }}
-    url: https://github.com/vespakoen/opencamlib/archive/refs/tags/2023.01.09.tar.gz
-    sha256: 25222a83f17d8c0e2745a3e3d83866cc504119e2338e8d16b5a742e4dd1cc0cd
+    url: https://github.com/vespakoen/opencamlib/archive/refs/tags/2023.01.10.tar.gz
+    sha256: 12cf8d42f02dda8248ea92296034d738b5d90b8b78442212ef699251e495e159
 
 build:
     number: 0
