@@ -1,16 +1,14 @@
 {% set name = "opencamlib" %}
-{% set version = "2022.12.18" %}
-{% set sha256 = "24698fb937c66905f53c99d399e60623b9555f6d04a0fb3609b248a7c31c9c63" %}
+{% set version = "2023.01.11" %}
+{% set sha256 = "07fd9b61c39c4d600e441d67edbafc1015e9e3fabd88b561a647f98fedf31d41" %}
 
 package:
     name: {{ name }}
     version: {{ version }}
 
 source:
-    # url: https://github.com/aewallin/{{ name }}/archive/{{ version }}.tar.gz
-    # sha256: {{ sha256 }}
-    url: https://github.com/vespakoen/opencamlib/archive/refs/tags/2023.01.10.tar.gz
-    sha256: 12cf8d42f02dda8248ea92296034d738b5d90b8b78442212ef699251e495e159
+    url: https://github.com/aewallin/{{ name }}/archive/{{ version }}.tar.gz
+    sha256: {{ sha256 }}
 
 build:
     number: 0
