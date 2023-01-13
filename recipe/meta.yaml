@@ -25,11 +25,11 @@ requirements:
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
-        - scikit-build-core
-        - boost
     host:
         - python
         - pip
+        - scikit-build-core
+        - boost
     run:
         - python
 
