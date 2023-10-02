@@ -31,7 +31,6 @@ requirements:
         - scikit-build-core
         - boost
     run:
-        - boost
         - python
 
 test:
