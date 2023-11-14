@@ -1,0 +1,52 @@
+diff --git a/src/cxxlib/cxxlib.cmake b/src/cxxlib/cxxlib.cmake
+index c3dd4aa..b3e81be 100644
+--- a/src/cxxlib/cxxlib.cmake
++++ b/src/cxxlib/cxxlib.cmake
+@@ -9,7 +9,7 @@ add_library(ocl
+ )
+ 
+ if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl VERSION_STRING=${VERSION_STRING})
++  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+ endif()
+ 
+ if(WIN32)
+diff --git a/src/emscriptenlib/emscriptenlib.cmake b/src/emscriptenlib/emscriptenlib.cmake
+index fb5ff4f..a4a33e3 100644
+--- a/src/emscriptenlib/emscriptenlib.cmake
++++ b/src/emscriptenlib/emscriptenlib.cmake
+@@ -26,7 +26,7 @@ add_executable(ocl
+ )
+ 
+ if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl VERSION_STRING=${VERSION_STRING})
++  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+ endif()
+ 
+ target_link_libraries(
+diff --git a/src/nodejslib/nodejslib.cmake b/src/nodejslib/nodejslib.cmake
+index 8fead36..537a16b 100644
+--- a/src/nodejslib/nodejslib.cmake
++++ b/src/nodejslib/nodejslib.cmake
+@@ -47,7 +47,7 @@ target_link_libraries(
+ )
+ 
+ if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl VERSION_STRING=${VERSION_STRING})
++  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+ endif()
+ 
+ if(USE_OPENMP)
+diff --git a/src/pythonlib/pythonlib.cmake b/src/pythonlib/pythonlib.cmake
+index a352a84..9b9be5d 100644
+--- a/src/pythonlib/pythonlib.cmake
++++ b/src/pythonlib/pythonlib.cmake
+@@ -26,7 +26,7 @@ MODULE
+ )
+ 
+ if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl VERSION_STRING=${VERSION_STRING})
++  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+ endif()
+ 
+ target_link_libraries(

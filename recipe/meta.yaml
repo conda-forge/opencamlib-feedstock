@@ -9,9 +9,13 @@ package:
 source:
     url: https://github.com/aewallin/{{ name }}/archive/{{ version }}.tar.gz
     sha256: {{ sha256 }}
+    patches:
+        - patches/boost-shared.patch
+        - patches/compile_definitions.patch
+        - patches/version_string.patch
 
 build:
-    number: 1
+    number: 2
     skip: true  # [py<36]
 
 requirements:
@@ -21,7 +25,7 @@ requirements:
         - ninja
         - cmake
         - make
-        - python                                 # [build_platform != target_platform]
+        - python
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
@@ -29,10 +33,11 @@ requirements:
         - python
         - pip
         - scikit-build-core
-        - boost
+        - libboost-devel
+        - libboost-python-devel
     run:
-        - boost
         - python
+        - libboost-python
 
 test:
   imports:

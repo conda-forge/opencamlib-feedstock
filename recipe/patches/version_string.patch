@@ -1,0 +1,93 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 9c6a445..b96b956 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -45,7 +45,7 @@ option(USE_OPENMP
+     "Use OpenMP for parallel computation" ON)
+ 
+ option(VERSION_STRING
+-    "Set version string")
++    "Set version string" OFF)
+ 
+ option(USE_PY_3
+     "Use Python V3" ON)
+@@ -73,6 +73,10 @@ if(NOT BUILD_DOC)
+   message(STATUS " Note: will NOT build ocl documentation")
+ endif()
+ 
++if (NOT VERSION_STRING)
++  set(VERSION_STRING "unknown-version")
++endif()
++
+ # figure out the gcc version
+ include(gcc_version.cmake)
+ 
+@@ -318,7 +322,7 @@ if(BUILD_DOC)
+       OUTPUT
+       doc/latex/index.tex
+       doc/html/index.html
+-      COMMAND ${DOXYGEN_EXECUTABLE} ${DOXY_CONFIG}
++      COMMAND Doxygen::doxygen ${DOXY_CONFIG}
+       COMMENT building LaTex & HTML docs
+     )
+ 
+diff --git a/src/cxxlib/cxxlib.cmake b/src/cxxlib/cxxlib.cmake
+index b3e81be..4d59a7a 100644
+--- a/src/cxxlib/cxxlib.cmake
++++ b/src/cxxlib/cxxlib.cmake
+@@ -8,9 +8,7 @@ add_library(ocl
+     ${OCL_COMMON_SRC}
+ )
+ 
+-if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+-endif()
++target_compile_definitions(ocl PUBLIC VERSION_STRING="${VERSION_STRING}")
+ 
+ if(WIN32)
+   # on windows, prefix the library with lib, and make sure the .lib file is installed as well
+diff --git a/src/emscriptenlib/emscriptenlib.cmake b/src/emscriptenlib/emscriptenlib.cmake
+index a4a33e3..a19c495 100644
+--- a/src/emscriptenlib/emscriptenlib.cmake
++++ b/src/emscriptenlib/emscriptenlib.cmake
+@@ -25,9 +25,7 @@ add_executable(ocl
+ 	${PROJECT_SOURCE_DIR}/emscriptenlib/emscriptenlib.cpp
+ )
+ 
+-if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+-endif()
++target_compile_definitions(ocl PUBLIC VERSION_STRING="${VERSION_STRING}")
+ 
+ target_link_libraries(
+   ocl
+diff --git a/src/nodejslib/nodejslib.cmake b/src/nodejslib/nodejslib.cmake
+index 537a16b..d163baa 100644
+--- a/src/nodejslib/nodejslib.cmake
++++ b/src/nodejslib/nodejslib.cmake
+@@ -46,9 +46,7 @@ target_link_libraries(
+ 		${CMAKE_JS_LIB}
+ )
+ 
+-if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+-endif()
++target_compile_definitions(ocl PUBLIC VERSION_STRING="${VERSION_STRING}")
+ 
+ if(USE_OPENMP)
+   target_link_libraries(ocl PRIVATE OpenMP::OpenMP_CXX)
+diff --git a/src/pythonlib/pythonlib.cmake b/src/pythonlib/pythonlib.cmake
+index 9b9be5d..6164507 100644
+--- a/src/pythonlib/pythonlib.cmake
++++ b/src/pythonlib/pythonlib.cmake
+@@ -25,9 +25,7 @@ MODULE
+   pythonlib/ocl.cpp
+ )
+ 
+-if(DEFINED VERSION_STRING)
+-  target_compile_definitions(ocl PUBLIC VERSION_STRING=${VERSION_STRING})
+-endif()
++target_compile_definitions(ocl PUBLIC VERSION_STRING="${VERSION_STRING}")
+ 
+ target_link_libraries(
+   ocl
