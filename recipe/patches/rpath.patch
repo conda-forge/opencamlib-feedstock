@@ -1,0 +1,28 @@
+diff --git a/src/cxxlib/cxxlib.cmake b/src/cxxlib/cxxlib.cmake
+index 7c97e5d..7c634a5 100644
+--- a/src/cxxlib/cxxlib.cmake
++++ b/src/cxxlib/cxxlib.cmake
+@@ -100,9 +100,6 @@ install(FILES "${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
+ )
+ 
+ if(USE_OPENMP AND APPLE)
+-  # add homebrew libomp paths to the INSTALL_RPATH, and the @loader_path last as a fallback.
+-  set_target_properties(ocl PROPERTIES
+-    INSTALL_RPATH "/opt/homebrew/opt/libomp/lib;/usr/local/opt/libomp/lib;@loader_path")
+   # copy libomp into install directory
+   install(
+     FILES ${OpenMP_CXX_LIBRARIES}
+diff --git a/src/pythonlib/pythonlib.cmake b/src/pythonlib/pythonlib.cmake
+index 87b47e8..705bc27 100644
+--- a/src/pythonlib/pythonlib.cmake
++++ b/src/pythonlib/pythonlib.cmake
+@@ -50,9 +50,6 @@ if(NOT SKBUILD)
+ endif()
+ 
+ if(USE_OPENMP AND APPLE)
+-  # add homebrew libomp paths to the INSTALL_RPATH, and the @loader_path last as a fallback.
+-  set_target_properties(ocl PROPERTIES
+-    INSTALL_RPATH "/opt/homebrew/opt/libomp/lib;/usr/local/opt/libomp/lib;@loader_path")
+   # copy libomp into install directory
+   install(
+     FILES ${OpenMP_CXX_LIBRARIES}

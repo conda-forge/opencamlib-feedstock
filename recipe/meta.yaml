@@ -13,9 +13,10 @@ source:
         - patches/boost-shared.patch
         - patches/compile_definitions.patch
         - patches/version_string.patch
+        - patches/rpath.patch
 
 build:
-    number: 3
+    number: 4
     skip: true  # [py<36]
 
 requirements:
