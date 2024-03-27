@@ -16,12 +16,13 @@ source:
         - patches/rpath.patch
 
 build:
-    number: 4
+    number: 5
     skip: true  # [py<36]
 
 requirements:
     build:
         - {{ compiler("c") }}
+        - {{ stdlib("c") }}
         - {{ compiler("cxx") }}
         - ninja
         - cmake
