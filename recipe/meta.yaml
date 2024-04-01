@@ -16,7 +16,7 @@ source:
         - patches/rpath.patch
 
 build:
-    number: 5
+    number: 6
     skip: true  # [py<36]
 
 requirements:
